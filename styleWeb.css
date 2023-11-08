@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#FFDA3F;
+}
+.content{
+    size: 100%; 
+    margin-top: 7%;
+    position: relative;
+}
+
+img{
+    max-width: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+.logo img:hover{
+    cursor: pointer; 
+}
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.input input{  
+    position: absolute;
+    width: 50%; 
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    overflow: auto;
+    padding: 10px;
+    border-radius: 16px;  
+    border: 1px solid rgba(235, 179, 24, 0.856);
+}
+
+.input input::placeholder{
+    color: #5a595996;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 5%; 
+}
+.button button{
+    font-family: 'Kanit', sans-serif; 
+    font-size: 26px;
+    padding: 5px 15px 5px 15px;
+    border-radius: 16px;
+    background-color: rgb(255, 255, 255);    
+    color: rgba(53, 53, 53, 0.911); 
+    border: 1px solid rgba(235, 179, 24, 0.856); 
+}
+
+.button button:hover{
+    background-color: rgba(53, 53, 53, 0.753);
+    color: white;
+    cursor: pointer; 
+}
+
+
+@media (max-width: 440px ){
+    img{
+        width: 250px;     
+        margin-bottom: 50px;
+        margin-top: 170px;
+    }
+    .button button{
+        max-width: 100px;
+        font-size: 15px; 
+        margin: 20px;     
+        padding: 5 10px 5 10px;
+    }
+    .input input{
+        width: 80%; 
+    }
+}
